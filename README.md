@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 > npm i ngx-csvto-json --save \
 [NPM Package Link](https://www.npmjs.com/package/ngx-csvto-json "ngx-csvto-json")\
-\
+
 import NgxCSVtoJSONModule in **app.module.ts** file.  
 **app.module.ts**
 ```javascript
@@ -36,7 +36,7 @@ Bind those event in **app.component.ts** file with user defined functions and pr
 <Ngx-CSVtoJSON (onConvert)="convert($event)" (onFail)="onError($event)"></Ngx-CSVtoJSON>
 ```
 
-## Step - 3
+## CONVERTED RESULT FORMAT
 Result format will be in 
 ```javascript
 finalobj= {
@@ -44,4 +44,5 @@ finalobj= {
  result: []
 };
 ```
+> That's it you are good to go. Happy Coding :)
 
