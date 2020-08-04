@@ -6,8 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Step - 1
 
-> npm i ngx-csvto-json --save 
-[NPM Package Link](https://www.npmjs.com/package/ngx-csvto-json "ngx-csvto-json")\
+> npm i ngx-csvto-json --save  
+[NPM Package Link](https://www.npmjs.com/package/ngx-csvto-json "ngx-csvto-json")  
 
 import NgxCSVtoJSONModule in **app.module.ts** file.  
 **app.module.ts**
