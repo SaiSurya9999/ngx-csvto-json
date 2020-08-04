@@ -7,9 +7,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Step - 1
 
 > npm i ngx-csvto-json --save \
-[NPM Package Link](https://www.npmjs.com/package/ngx-csvto-json "ngx-csvto-json")
+[NPM Package Link](https://www.npmjs.com/package/ngx-csvto-json "ngx-csvto-json")\
+\
+import NgxCSVtoJSONModule in **app.module.ts** file.
 ```javascript
-import NgxCSVtoJSONModule in "app.module.ts" file.
 import {NgxCSVtoJSONModule} from 'ngx-csvto-json';
  imports: [
     NgxCSVtoJSONModule
@@ -17,7 +18,8 @@ import {NgxCSVtoJSONModule} from 'ngx-csvto-json';
   ```
 
 ## Step - 2
-Use selector **"Ngx-CSVtoJSON"** to use the converter component. \ [**Note**: This component can emit two events "onConvert" and "onFail"]\
+Use selector **"Ngx-CSVtoJSON"** to use the converter component. \ 
+[**Note**: This component can emit two events "onConvert" and "onFail"] \
 Bind those event in **app.component.ts** file with user defined functions and process the result.\
 **app.component.ts**
  ```javascript
@@ -29,7 +31,7 @@ Bind those event in **app.component.ts** file with user defined functions and pr
   }
 ```
 **app.component.html**
-```angular
+```html
 <Ngx-CSVtoJSON (onConvert)="convert($event)" (onFail)="onError($event)"></Ngx-CSVtoJSON>
 ```
 
