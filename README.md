@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
-![CSV Format](https://img.icons8.com/officel/48/000000/csv.png "CSV Format")
+![CSV Format](https://img.icons8.com/officel/48/000000/csv.png "CSV Format") to ![JSON Format](https://img.icons8.com/office/16/000000/json.png "JSON Format")
 
 ## Step - 1
 
