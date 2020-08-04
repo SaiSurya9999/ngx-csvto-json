@@ -12,6 +12,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/ngx-csvto-json/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ngx-csvto-json/tsconfig.spec.json"
     }
 ]
 }

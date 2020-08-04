@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CSVtoJSONLibrary';
+  
+ 
+  convert(objArray){
+   console.log(objArray);
+  }
+  onError(err){
+    console.log(err);
+  }
 }
