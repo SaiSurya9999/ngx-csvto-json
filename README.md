@@ -6,10 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Step - 1
 
-> npm i ngx-csvto-json --save
+> npm i ngx-csvto-json --save \
 [NPM Package Link](https://www.npmjs.com/package/ngx-csvto-json "ngx-csvto-json")
 ```javascript
-Import NgxCSVtoJSONModule in "app.module.ts" file.
+import NgxCSVtoJSONModule in "app.module.ts" file.
 import {NgxCSVtoJSONModule} from 'ngx-csvto-json';
  imports: [
     NgxCSVtoJSONModule
@@ -17,9 +17,9 @@ import {NgxCSVtoJSONModule} from 'ngx-csvto-json';
   ```
 
 ## Step - 2
-Use selector **"Ngx-CSVtoJSON"** to use the converter component [**Note**: This component can emit two events "onConvert" and "onFail"]
-Bind those event in **app.component.ts** file with user defined functions and process the result.
-app.component.ts
+Use selector **"Ngx-CSVtoJSON"** to use the converter component. \ [**Note**: This component can emit two events "onConvert" and "onFail"]\
+Bind those event in **app.component.ts** file with user defined functions and process the result.\
+**app.component.ts**
  ```javascript
  convert(objArray){
    console.log(objArray);
@@ -27,14 +27,18 @@ app.component.ts
   onError(err){
     console.log(err);
   }
+```
+**app.component.html**
+```angular
 <Ngx-CSVtoJSON (onConvert)="convert($event)" (onFail)="onError($event)"></Ngx-CSVtoJSON>
 ```
 
 ## Step - 3
 Result format will be in 
-onConvert => 
-{
+```javascript
+finalobj= {
  properties: [],
  result: []
-}
+};
+```
 
