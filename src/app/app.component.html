@@ -1,2 +1,9 @@
 <Ngx-CSVtoJSON (onConvert)="convert($event)" (onFail)="onError($event)"></Ngx-CSVtoJSON>
 
+<input type="text" [(ngModel)]="term" [value]="term" placeholder="Search">
+<div *ngIf="testArray.length>0">
+   <div *ngFor="let item of testArray | searchFilter: { term: term, prop: prop }" >
+      {{item.name}} || {{item.phno}} 
+   </div>
+   
+</div>

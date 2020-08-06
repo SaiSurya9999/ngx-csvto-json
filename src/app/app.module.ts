@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgxCSVtoJSONModule} from 'ngx-csvto-json';
-
+import {  FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import {NgconfSearchModule} from 'ngconf-search';
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +12,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxCSVtoJSONModule
+    NgxCSVtoJSONModule,
+    NgconfSearchModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
