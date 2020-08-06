@@ -1,24 +1,52 @@
-# NgxCSVtoJSON
+# CSVtoJSONLibrary
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
-## Code scaffolding
+![CSV Format](https://img.icons8.com/officel/48/000000/csv.png "CSV Format") => ![JSON Format](https://img.icons8.com/office/48/000000/json.png "JSON Format")
 
-Run `ng generate component component-name --project NgxCSVtoJSON` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project NgxCSVtoJSON`.
-> Note: Don't forget to add `--project NgxCSVtoJSON` or else it will be added to the default project in your `angular.json` file. 
+### Demo Link   
+[Stackblitz Demo](https://stackblitz.com/edit/ngx-csvto-json "ngx-csvto-json") 
 
-## Build
 
-Run `ng build NgxCSVtoJSON` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Step - 1
 
-## Publishing
+> npm i ngx-csvto-json --save  
+[NPM Package Link](https://www.npmjs.com/package/ngx-csvto-json "ngx-csvto-json")  
 
-After building your library with `ng build NgxCSVtoJSON`, go to the dist folder `cd dist/ngx-csvto-json` and run `npm publish`.
+import NgxCSVtoJSONModule in **app.module.ts** file.  
+**app.module.ts**
+```javascript
+import {NgxCSVtoJSONModule} from 'ngx-csvto-json';
+ imports: [
+    NgxCSVtoJSONModule
+  ]
+  ```
 
-## Running unit tests
+## Step - 2
+Use selector **"Ngx-CSVtoJSON"** to use the converter component  
+**Note**: This component can emit two events "onConvert" and "onFail"  
+Bind those event in **app.component.ts** file with user defined functions and process the result  
+**app.component.ts**
+ ```javascript
+ convert(objArray){
+   console.log(objArray);
+  }
+  onError(err){
+    console.log(err);
+  }
+```
+**app.component.html**
+```html
+<Ngx-CSVtoJSON (onConvert)="convert($event)" (onFail)="onError($event)"></Ngx-CSVtoJSON>
+```
 
-Run `ng test NgxCSVtoJSON` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## CONVERTED RESULT FORMAT
+Result format will be in 
+```javascript
+finalobj= {
+ properties: [],
+ result: []
+};
+```
+> That's it you are good to go. Happy Coding :)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
